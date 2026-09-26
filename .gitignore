@@ -1,0 +1,14 @@
+# Virtual environment
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# VS Code personal settings
+.vscode/
+
+# Large media: videos and raw recordings stay local
+*.mp4
+*.mov
+*.avi
