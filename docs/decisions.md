@@ -58,3 +58,31 @@
 **Consequences:** 
 * Custom dataclass of SquareSets is much easier to convert a board into, and for finding changed squares. We are at risk of white/black overlap but this can be validated in `__post_init__` before building a board.
 * Postponed: aligning confidence with occupancy
+
+## 004 — Expanded AI usage to reflect real-world development environments
+**Date:**       2026-10-16
+**Status:**     Accepted
+
+**Context:**    AI coding tools are being rolled out to staff at my workplace; weighing the value of proving I can hand-write every line against shipping a working, well-understood product sooner.
+
+**Decision:**   Expand AI usage to generating code adhering strictly to my specification. I retain all design decisions; implementation is delegated to AI. I write all of the tests myself to make sure any AI-generated code remains well understood and fit for purpose.
+
+**Alternatives considered:**   
+* **Option 1:** Continue writing code myself with the AI as a tutor.
+    * + More impressive as a software developer
+    * - Much slower development pace.
+    * - Willfully ignoring a powerful tool that is widely available in real-world environments.
+
+* **Option 2:** Allowing AI to generate all implementation and testing
+    * + Much, much faster development
+    * - Same source writing tests and code could fail to uncover misunderstandings
+    * - Python fluency undeveloped
+    * - Much less likely to understand the end result on a meaningful level
+
+**Consequences:** 
+* Coding/implementation is drastically accelerated as I will only be writing pseudocode and making decisions.
+* Generated code will be reviewed line by line, and results will be predicted before running code.
+* Increased risk of subtle bugs/edge cases causing problems so comprehensive code review will be required.
+* Only code that is understood will be committed.
+* Tests will still be written by me.
+* Limited room for improving Python fluency.
