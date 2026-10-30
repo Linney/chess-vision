@@ -20,3 +20,4 @@ def test_1e4():
     e4 = Occupancy(white= white_squares, black= black_squares)
 
     assert move_finder(starting_board, e4) == chess.Move.from_uci("e2e4")
+    

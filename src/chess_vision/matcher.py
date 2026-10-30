@@ -1,10 +1,6 @@
 import chess
 from dataclasses import dataclass, field
 
-@dataclass
-class Occupancy:
-    white: chess.SquareSet
-    black: chess.SquareSet
 
 
 def move_finder (board, occupancy):
