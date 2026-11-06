@@ -6,4 +6,11 @@ There is potential for further applications of this technology that would enable
 
 ## Status
 
-This project is in very early development.
+Phase 1 complete: a tested move-matching engine that finds the single legal move explaining a change in board occupancy, and flags the change when no move, or more than one, fits.
+
+## Running the tests
+
+```
+pip install -r requirements-dev.txt
+python -m pytest
+```
