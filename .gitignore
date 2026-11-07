@@ -16,3 +16,6 @@ __pycache__/
 # Media stays local; only the manifest is tracked
 data/*
 !data/manifest.md
+
+# Scratch folder
+scratch/
