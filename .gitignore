@@ -12,3 +12,7 @@ __pycache__/
 *.mp4
 *.mov
 *.avi
+
+# Media stays local; only the manifest is tracked
+data/*
+!data/manifest.md
